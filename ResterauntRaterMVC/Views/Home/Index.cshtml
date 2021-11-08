@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Restaurant Rater</h1>
+    <p class="lead">Restaurant Rater is a free app that allows you to rate your favorite restaurants...or least favorite.</p>
+    <p>@Html.ActionLink(HttpUtility.HtmlDecode("LearnMore &raquo;"), "About", null, new { @class = "btn btn-primary btn-lg" })</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting Started</h2>
+        <p>
+            Rate a restaurant by clicking the button below or by clicking the link in the nav bar at the top of your screen.
+        </p>
+        <p><a class="btn btn-default" href="/Restaurant/Index">Rate a Restaurant &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get More Info</h2>
+        <p>Click the button below to learn more about Restaurant Rater.</p>
+        <p><a class="btn btn-default" href="/Home/About">Learn More &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get In Touch</h2>
+        <p>Click the bitton below to contact the owners of Resaurant Rater with your comments, questions and concerns.</p>
+        <p><a class="btn btn-default" href="/Home/Contact">Contact &raquo;</a></p>
+    </div>
+</div>
